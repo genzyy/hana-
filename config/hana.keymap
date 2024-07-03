@@ -17,6 +17,7 @@
 #define DEF 0
 #define NUM 1
 #define SYM 2
+#define SYS 3
 
 // Extra thumb keys used in HRM (not-available in hana)
 #define LH5
@@ -40,7 +41,7 @@ ZMK_TAP_DANCE(r_rot,
 
 /* Keymap */
 
-ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
+ZMK_CONDITIONAL_LAYER(NUM SYM, SYS)
 
 ZMK_LAYER(base,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
